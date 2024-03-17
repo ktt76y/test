@@ -1,3 +1,10 @@
+body {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */
+}
+
 .runframe {
   display: flex;
   height: 120px;
@@ -78,7 +85,7 @@
 }
 
 .block_one{
-  
+
   width: 10%;
 }
 
@@ -89,8 +96,8 @@
 
 .blokki{
   display: block;
-  
- 
+
+
 }
 
 .block_1_3{
@@ -109,14 +116,7 @@
 
 
 
-.textfreame{
-    height: 120px;
-    background: #8602FD;
-    width:100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
+
 
 .tx3{
   font-family: "Montserrat", sans-serif;
@@ -126,10 +126,9 @@
   margin-top: -10px;
 }
 
-.constellation_freame{
-  height: 800px;
-  background-color: #12122C;
-}
+
+
+
 
 .textfreame_3{
    height: 120px;
@@ -158,13 +157,7 @@
   left: 120px;
 }
 
-.karma{
-  margin-top:100px ;
-  margin-bottom:100px ;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 .Footer{
   height: 120px;
@@ -180,7 +173,7 @@
   margin-left: 40px;
   float: left;
   margin-top: 45px;
-  
+
 }
 
 .right-text {
@@ -198,8 +191,10 @@
   height: 150px;
   border-radius: 100%;
   border: 5px solid #12122C;
-  position: relative;
+  position: absolute;
   float: left;
+  bottom: 0;
+    left: 0;
 }
 
 .y-2{
@@ -212,4 +207,554 @@
   border: 20px solid #FCAFFF;
   left: 70px;
   bottom: 35px;
+}
+
+.matrix {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height:auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.matrix-img-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+}
+
+.matrix-layout {
+  width: 400px;
+  height: 80px;
+  background-color: #160C47;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 50px;
+  padding-left: 50px;
+  transition: width 0.5s ease, height 0.5s ease;
+}
+
+.matrix-button-start {
+  background-color: #FF4B71;
+  height: 60px;
+  width: 214px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  right: 10%;
+}
+
+.matrix-form-up-main-title {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+
+.matrix-form-up-main-description {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.form-container {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.input {
+  width: 440px;
+  height: 40px;
+  padding-left: 20px;
+}
+
+.input::placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    color: #160C47;
+}
+
+.sex-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  margin-top: 15px;
+}
+
+.checkbox {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.checkbox-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+
+.button-container-form-check-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container-form-check {
+  width: 214px;
+  height: 60px;
+  background-color: #FF4B71;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
+  margin-top: 20px;
+}
+
+.matrix-form-img-container {
+  display: none;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.matrix-form-img {
+  width: 902px;
+  height: 550px;
+}
+
+
+.matrix-start-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+
+}
+
+.matrix-form {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.opacity {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.matrix-img {
+  width: 735px;
+  height: 721px;
+}
+
+.big-eay-container {
+  width: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-eay {
+  width: 162px;
+  height: 162px;
+  z-index: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pupil {
+  top: 28%;
+  width: 61px;
+  height: 61px;
+  position: absolute;
+  z-index: 10;
+}
+
+
+.big-eay-container-bottom {
+  width: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-eay-bottom {
+  width: 162px;
+  height: 162px;
+  z-index: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pupil-bottom {
+  top: 32%;
+  width: 61px;
+  height: 61px;
+  position: absolute;
+  z-index: 10;
+}
+
+.up-stars-container {
+  position: absolute;
+  top: 22%;
+  right: 0;
+  z-index: 10;
+
+}
+
+.up-big-star-container {
+  position: relative;
+  top: 0;
+  right: 60px;
+
+}
+
+.up-small-star-container {
+  position: absolute;
+  top: 60%;
+  right: 20px;
+}
+
+.bottom-stars-container {
+  position: absolute;
+  bottom: 22%;
+  left: 1%;
+  z-index: 10;
+}
+
+.up-big-star-container {
+  position: relative;
+  top: 0;
+  right: 60px;
+}
+
+.up-small-star-container {
+  position: absolute;
+  top: 60%;
+  right: 20px;
+}
+
+.scale {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.scale:hover {
+  transform: scale(1.5);
+}
+
+.up-stars-left-container {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  z-index: 10;
+}
+
+.up-small-up-left-star-container {
+  position: absolute;
+  top: 0%;
+  left: 90px;
+}
+
+/*
+  Second page "Create constellation"
+*/
+
+.block_two {
+  height: 800px;
+  position: relative;
+}
+
+.textfreame{
+  height: 15%;
+  background: #8602FD;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.constellation_container{
+  height: 85%;
+  width: 100%;
+  background-color: #12122C;
+}
+
+.start-create-constellation{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.button-container {
+  width: 179px;
+  height: 60px;
+  background-color: #FF4B71;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
+  position: absolute;
+  bottom: 50px;
+  cursor: pointer;
+}
+
+.button-container:hover {
+  background-color: #7BB2F4;
+}
+
+.run-create-constellation {
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-container {
+  width: 440px;
+  height: 80px;
+  background-color: #7BB2F4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.title-constellation {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+.constellation-star-left-up {
+  position: absolute;
+  top: -30%;
+  left: -5%;
+}
+
+.constellation-star-right-up{
+  position: absolute;
+  top: -30%;
+  right: -5%;
+}
+
+.constellation-star-left-bottom {
+    position: absolute;
+    bottom: -30%;
+    left: -5%;
+}
+
+.constellation-sky {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.constellation-sky-draw {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.constellation-button {
+  position: absolute;
+  width: 375px;
+  height: 60px;
+  background-color: #FF4B71;
+  bottom: 2%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
+  display: none;
+}
+
+.modal-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-constellation {
+  width: 590px;
+  height: 80px;
+  background-color: #FF4B71;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Three screen */
+
+.block_three {
+  height: 800px;
+  background-color: white;
+  position: relative;
+}
+
+.textfreame_3 {
+  height: 15%;
+}
+
+.karma-container {
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.karma{
+  width: 100%;
+  height: 90%;
+  object-fit: contain;
+  margin-top:100px ;
+  margin-bottom:100px ;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.karma-1 {
+  top: 0;
+  margin-left: -6%;
+}
+
+.karma-2 {
+    top: 30%;
+    margin-left: -10%;
+}
+
+.karma-3 {
+    top: 30%;
+    margin-left: 0%;
+}
+
+.karma-4 {
+    top: 25%;
+    margin-left: 15%;
+}
+
+.karma-5 {
+    top: 0;
+    margin-left: 5%;
+}
+
+.karma-6 {
+    top: 50%;
+    margin-left: 20%;
+}
+
+.karma-7 {
+  top: 60%;
+  margin-left: 30%;
+}
+
+.karma-8 {
+  top: 70%;
+  margin-left: 0%;
+}
+
+.karma-9 {
+  top: 70%;
+  margin-left: -30%;
+}
+
+.karma-10 {
+  top: 50%;
+  margin-left: -20%;
+}
+
+.karma-container-title {
+  background-color: #12122C;
+  padding: 30px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10%;
+  right: 20px;
+}
+
+.karma-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.big-eay-container-bottom-karma {
+  width: auto;
+  position: absolute;
+  top: 0;
+  right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
