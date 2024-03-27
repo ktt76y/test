@@ -69,7 +69,7 @@ body {
 
 .tx2{
   font-family: "Montserrat", sans-serif;
-  font-size: 48px ;
+  font-size: 46px ;
   font-weight: 700;
   color: #8602FD;
   margin-top: -10px;
@@ -120,7 +120,7 @@ body {
 
 .tx3{
   font-family: "Montserrat", sans-serif;
-  font-size: 48px ;
+  font-size: 46px ;
   font-weight: 700;
   color: #FCAFFF;
   margin-top: -10px;
@@ -141,7 +141,7 @@ body {
 
 .tx4{
   font-family: "Montserrat", sans-serif;
-  font-size: 48px ;
+  font-size: 46px ;
   font-weight: 700;
   color: #8602FD;
   margin-top: -10px;
@@ -246,13 +246,13 @@ body {
 
 .matrix-button-start {
   background-color: #FF4B71;
-  height: 60px;
+  height: 50px;
   width: 214px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 800;
   color: white;
   position: absolute;
@@ -329,10 +329,10 @@ body {
 
 .button-container-form-check {
   width: 214px;
-  height: 60px;
+  height: 50px;
   background-color: #FF4B71;
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 800;
   color: white;
   margin-top: 20px;
@@ -353,7 +353,7 @@ body {
 .matrix-start-title {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 400;
     color: white;
     position: absolute;
 
@@ -538,10 +538,10 @@ body {
 
 .button-container {
   width: 179px;
-  height: 60px;
+  height: 50px;
   background-color: #FF4B71;
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 800;
   color: white;
   position: absolute;
@@ -611,11 +611,11 @@ body {
 .constellation-button {
   position: absolute;
   width: 375px;
-  height: 60px;
+  height: 50px;
   background-color: #FF4B71;
   bottom: 2%;
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 800;
   color: white;
   display: none;
@@ -743,7 +743,7 @@ body {
 .karma-title {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 400;
     color: white;
     text-align: center;
     margin-bottom: 20px;
