@@ -29,10 +29,25 @@
         <div class="pinkframe">
           <img class="star1" src="./img/Star352.png" />
         </div>
+        <img class='starGroup' src="./img/starGroup.png"/>
         <div class="blouframe">
-          <img class="rhomb1" src="./img/Group28.png" />
+          <div class="left-star-container">
+            <svg class="left-max-star" width="120" height="119" viewBox="0 0 120 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M60 0L76.2054 43.4296L120 59.5L76.2054 75.5704L60 119L43.7946 75.5704L0 59.5L43.7946 43.4296L60 0Z" fill="#FCAFFF"/>
+            </svg>
+            <svg class="left-mini-star scale-down" width="120" height="119" viewBox="0 0 120 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M60 0L76.2054 43.4296L120 59.5L76.2054 75.5704L60 119L43.7946 75.5704L0 59.5L43.7946 43.4296L60 0Z" fill="#FCAFFF"/>
+            </svg>
+          </div>
           <h2 class="tx2">матрица судьбы</h2>
-          <img class="rhomb2" src="./img/Group29.png" />
+          <div class="right-star-container">
+            <svg class="right-mini-star scale-down" width="120" height="119" viewBox="0 0 120 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M60 0L76.2054 43.4296L120 59.5L76.2054 75.5704L60 119L43.7946 75.5704L0 59.5L43.7946 43.4296L60 0Z" fill="#FCAFFF"/>
+            </svg>
+            <svg class="right-max-star" width="120" height="119" viewBox="0 0 120 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M60 0L76.2054 43.4296L120 59.5L76.2054 75.5704L60 119L43.7946 75.5704L0 59.5L43.7946 43.4296L60 0Z" fill="#FCAFFF"/>
+            </svg>
+          </div>
         </div>
       </div>
     </div>
@@ -163,9 +178,15 @@
       </div>
 
       <div class="matrix-img-container">
-        <img class="matrix-img" src="./img/matrix-image.png" />
+<!--        <img src="./img/first-star.png" class="firstStar"/>-->
+<!--        <img src="./img/second-star.png" class="secondStar"/>-->
+        <video controls autoplay loop class="matrix-img matrix-video">
+          <source class="matrix-video" src="./img/matrixVideo.mp4" type="video/mp4">
+        </video>
         <div id="matrix-layout" class="matrix-layout">
-          <div class="matrix-start-title">Ты можешь расчитать свою матрицу судьбы</div>
+          <div class="matrix-start-title">
+            <img class="matrix-img-title" src="./img/up-first-title.png"/>
+          </div>
           <div class="matrix-form opacity">
             <div>
               <div class="matrix-form-up-main-title">Заполни анкету</div>
@@ -281,6 +302,7 @@
         <h2 class="tx4">Очисти карму</h2>
         <img class="star" src="./img/Star1.png" />
         <img class="group_stars" src="./img/Group1.png" />
+        <img class="img-eay" src="./img/eay.png"/>
         <div class="big-eay-container-bottom-karma">
           <img class="big-eay-bottom" src="./img/svg/big-eay.svg" />
           <img id="pupil-bottom-karma" class="pupil-bottom" src="./img/svg/pupil.svg" />

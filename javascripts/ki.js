@@ -417,3 +417,51 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Get SVG elements
+  const leftMiniStar = document.querySelector('.left-mini-star');
+  const rightMiniStar = document.querySelector('.right-mini-star');
+  const leftMaxStar = document.querySelector('.left-max-star');
+  const rightMaxStar = document.querySelector('.right-max-star');
+
+  // Function to change color of SVG element
+  function changeColor(svgElement, color) {
+    const path = svgElement.querySelector('path');
+    if (path) {
+      path.setAttribute('fill', color);
+    }
+  }
+
+  // Function to toggle color of SVG element
+  function toggleColor(svgElement) {
+    const path = svgElement.querySelector('path');
+    if (path) {
+      const currentColor = path.getAttribute('fill');
+      if (currentColor === '#FCAFFF') {
+        changeColor(svgElement, '#8602FD');
+      } else {
+        changeColor(svgElement, '#FCAFFF');
+      }
+    }
+  }
+
+  // Change color of SVG elements at regular intervals with random delay
+  setInterval(function() {
+    setTimeout(function() { toggleColor(leftMiniStar); }, Math.random() * 1000);
+    setTimeout(function() { toggleColor(rightMiniStar); }, Math.random() * 1000);
+    setTimeout(function() { toggleColor(leftMaxStar); }, Math.random() * 1000);
+    setTimeout(function() { toggleColor(rightMaxStar); }, Math.random() * 1000);
+  }, 1000);
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  function playVideo() {
+    var video = document.querySelector('.matrix-video');
+    if (video.paused) {
+      video.play();
+    }
+  }
+
+  playVideo()
+})
