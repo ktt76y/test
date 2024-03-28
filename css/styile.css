@@ -83,7 +83,7 @@ button {
 
 .tx2{
   font-family: "Montserrat", sans-serif;
-  font-size: 46px ;
+  font-size: 44px ;
   font-weight: 700;
   color: #8602FD;
   margin-top: -10px;
@@ -142,7 +142,7 @@ width: 665px;
 
 .tx3{
   font-family: "Montserrat", sans-serif;
-  font-size: 46px ;
+  font-size: 44px ;
   font-weight: 700;
   color: #FCAFFF;
   margin-top: -10px;
@@ -163,7 +163,7 @@ width: 665px;
 
 .tx4{
   font-family: "Montserrat", sans-serif;
-  font-size: 46px ;
+  font-size: 44px ;
   font-weight: 700;
   color: #8602FD;
   margin-top: -10px;
@@ -472,6 +472,8 @@ width: 665px;
   position: relative;
   object-fit: cover !important;
   z-index: 0;
+  width: 600 px;
+  height: 740px;
 }
 
 .big-eay-container {
@@ -641,9 +643,7 @@ width: 665px;
   cursor: pointer;
 }
 
-.button-container:hover {
-  background-color: #7BB2F4;
-}
+
 
 .run-create-constellation {
   width: 100%;
@@ -821,7 +821,8 @@ width: 665px;
 }
 
 .karma-container-title {
-  background-color: #12122C;
+  width: 500px;
+  height: 100px;
   padding: 30px;
   padding-bottom: 10px;
   display: flex;
@@ -830,6 +831,7 @@ width: 665px;
   position: absolute;
   top: 10%;
   right: 20px;
+  z-index: 50; 
 }
 
 .karma-title {
@@ -850,3 +852,144 @@ width: 665px;
   justify-content: center;
   align-items: center;
 }
+
+
+@media (max-width:1280px) {
+  .tx2{
+    font-weight: 700;
+    font-size: 32px ;
+  }
+  .tx3{
+    font-weight: 700;
+    font-size: 32px ;
+  }
+  .tx4{
+    font-weight: 700;
+    font-size: 32px ;
+  }
+  .starGroup{
+    display: none;
+  }
+  .img-eay{
+    display: none;
+  }
+  .left-text{
+    font-size: 20px ;
+  }
+  .right-text{
+    font-size: 20px ;
+  }
+  .secondclock{
+    height: 100px;
+  }
+  .textfreame_3{
+    height: 100px;
+ }
+ .Footer{
+  height: 100px;
+}
+.left-mini-star{
+  height: 100px;
+}
+
+}
+
+@media (max-width:1024px) {
+  .tx2{
+    font-weight: 700;
+    font-size: 32px ;
+  }
+  .tx3{
+    font-weight: 700;
+    font-size: 32px ;
+  }
+  .tx4{
+    font-weight: 700;
+    font-size: 32px ;
+  }
+  
+  .starGroup{
+    display: none;
+  }
+  .img-eay{
+    display: none;
+  }
+  .left-text{
+    font-size: 20px ;
+  }
+  .right-text{
+    font-size: 20px ;
+  }
+  .secondclock{
+    height: 100px;
+  }
+  .textfreame_3{
+    height: 100px;
+  }
+  .textfreame_3{
+    height: 100px;
+ }
+ .Footer{
+  height: 100px;
+}
+.left-mini-star{
+  height: 100px;
+}
+
+}
+
+@media (max-width:400px) {
+  .tx2{
+    font-weight: 700;
+    font-size: 20px ;
+  }
+  .tx3{
+    font-weight: 700;
+    font-size: 20px ;
+  }
+  .tx4{
+    font-weight: 700;
+    font-size: 20px ;
+  }
+  .starGroup{
+    display: none;
+  }
+  .img-eay{
+    display: none;
+  }
+  .left-text{
+    font-size: 20px ;
+  }
+  .right-text{
+    font-size: 20px ;
+  }
+  .secondclock{
+    height: 60px;
+  }
+  
+  .textfreame_3{
+    height: 60px;
+ }
+ .Footer{
+  height: 60px;
+}
+.pinkframe{
+  display: none;
+}
+.big-eay-container{
+  display: none;
+}
+.big-eay-container-bottom{
+  display: none;
+}
+.img-eay{
+  display: none;
+}
+.big-eay-container-bottom-karma{
+  display: none;
+}
+.up-stars-container{
+  display: none;
+}
+}
+
